@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASD STORE | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts..googleapis.com/css2? family=poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #1c1c1b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #096be3;
+}
+
+.header{
+    background: radial-gradient(#fff,#FFD700);
+}
+.header .row{
+    margin-top: 70px;
+}
+.catergories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align:center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.col-4:hover{
+    transform: translateY(-17px)
+}
+
+.offer{
+    background: radial-gradient(#fff,#04b5e6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+}
+small{
+    color: #000000;
+}
+
+/*----------testimonial------------*/
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;    
+}
+/*-----------brand widgets---------*/
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%)
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+/*--------footer------*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .fotter-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 2opx 0; 
+}
+.Copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/*--------media query for menu--------*/
+
+@media only screen and (max-width: 800px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*media query for less than 600 screen size*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;            
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }    
+} 
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="store name.png"width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>                                    
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="aboutpage.html">About</a></li>
+                    <li><a href="contactpage.html">Contact</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </nav>
+            <img src="accnt.jpg" width="30px" height="30px">
+            <img src="menu.jpg" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Give Your Life<br>A Better Starting!</h1>
+                <p>Let's Go, Let's Invent Tommorrow Instead Of Worrying  What Happened Yesterday.</p>
+                <a href=""class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="8.jpeg">
+            </div>
+        </div>
+    </div>
+</div>  
+<!------ features categories ------>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="4.jpeg">
+                </div>
+                <div class="col-3">
+                    <img src="9.jpeg">
+                </div>
+                <div class="col-3">
+                    <img src="60.jpeg">
+                </div>
+            </div>
+            </div>
+        </div>
+       
+    </div>
+  <!------ features PRODUCTS ------>
+    <div class="small-container">
+        <h2 class="title"> Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="10.jpeg">
+                <h4>Vivo X80 Pro</h4>
+                <p>Rs.39999</p>
+            </div>
+                   <div class="col-4">
+                <img src="63.jpeg">
+                <h4>Samsung Galaxy Buds 2 pro</h4>
+                <p>Rs.16999</p>
+            </div>
+            <div class="col-4">
+                <img src="20.jpeg">
+                <h4>Apple airpods Pro 2</h4>
+                <p>Rs.24999</p>
+            </div>
+            <div class="col-4">
+                <img src="70.jpeg">
+                <h4>Samsung Galaxy Watch 5 Pro</h4>
+                <p>Rs.49999</p>
+            </div>
+            <div class="col-4">
+                <img src="1.jpeg">
+                <h4>Apple Watch 6 series </h4>
+                <p>Rs.39999</p>
+            </div>
+        </div>
+        <h2 class="title"> Latest Products</h2>
+        <div class="row">
+        <div class="col-4">
+            <img src="17.jpeg">
+            <h4>Apple iPhone 14 Pro Max</h4>
+            <p>Rs.100999</p>
+        </div>
+        <div class="col-4">
+            <img src="67.jpeg">
+            <h4>Google Pixel 7 pro</h4>
+            <p>Rs.64000</p>
+        </div>
+        <div class="col-4">
+        <img src="68.jpeg">
+                <h4>Samsung S22 Ultra</h4>
+                <p>Rs.69999</p>
+            </div>
+            <div class="col-4">
+                <img src="66.jpeg">
+                <h4>Pixel Watch 1</h4>
+                <p>Rs.24999</p>
+            </div>
+            <div class="col-4">
+                <img src="71.jpeg">
+                <h4>Google pixel Earbuds pro</h4>
+                <p>Rs.12999</p>
+            </div>      
+        </div>
+    </div>
+<!-------Offer------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                  <img src="30.jpeg" class="offer-img">  
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on STORE</p>
+                    <h1>Smart Band 4</h1>
+                    <small>The Mi Smart Band 4 features a 39.9% larger(than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.</small>
+                    <a href="" class="btn">Visit Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------testimonial------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>"I got Samsung S22 ultra from SHG STORE and I'm very satisfied.This phone has high-end specs and worth the money.The store also offered free shipping at that price so that's a plus point!"</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i> 
+                    </div>
+                    <img src="mike.jpg">
+                    <h3>Mike Tyson</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>"I got Samsung S22 ultra from SHG STORE and I'm very satisfied.This phone has high-end specs and worth the money.The store also offered free shipping at that price so that's a plus point!"</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i> 
+                    </div>
+                    <img src="doraemon.jpg">
+                    <h3>Doraemon</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>"I got Samsung S22 ultra from SHG STORE and I'm very satisfied.This phone has high-end specs and worth the money.The store also offered free shipping at that price so that's a plus point!"</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i> 
+                    </div>
+                    <img src="john.jpg">
+                    <h3>John Cena</h3>
+                </div>
+            </div>
+        </div>
+    </div>  
+ <!----------brands widgets--------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="2.jpeg">
+                </div>
+                <div class="col-5">
+                    <img src="21.jpeg">
+                </div>
+                <div class="col-5">
+                    <img src="22.jpeg">
+                </div>
+                <div class="col-5">
+                    <img src="28.jpeg">
+                </div>
+                <div class="col-5">
+                    <img src="23.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-------------footer--------------------->  
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="19.jpeg">
+                        <img src="64.jpeg">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <p>Our Purpose Is To Sustainably Make The Pleasure And Benefits Of Technology To The many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2023 - HTML Project</p>
+        </div>
+    </div>
+    </script>
+</body>
+</html>
